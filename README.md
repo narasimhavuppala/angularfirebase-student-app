@@ -14,3 +14,4 @@ A demo CRUD app for student record management system built with Angular6 and Fir
 - NGX Pagination 3.2.0
 - RxJS 0.8.26
 - Typescript 2.7.2
+
