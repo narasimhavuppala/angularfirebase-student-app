@@ -83,9 +83,17 @@ body {
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, .25);
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.dasboard-text {
+  border-left: 1px solid rgb(255, 255, 255, .3);
+  color: rgb(255, 255, 255, .5);
+  display: inline-block;
+  padding: 0 0 0 14px;
+  font-size: 15px;
+  margin-left: 12px;
+  position: relative;
+  top: -1px;
 }
 
 .navbar .form-control {
@@ -254,6 +262,23 @@ body .table thead th {
   text-decoration: none;
 }
 
+.user-image {
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 7px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.custom-fa-plus {
+  margin: 0;
+  width: auto;
+}
+
 @media(max-width: 767px) {
   .sidebar {
     position: static;
@@ -280,6 +305,20 @@ body .table thead th {
   .pt-3,
   .py-3 {
     padding-top: 1.5rem !important;
+  }
+
+  .brand-logo {
+    max-width: 175px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .dasboard-text {
+    display: none !important;
+  }
+
+  ul.navbar-nav.px-3 {
+    margin: 0 auto;
   }
 
 }

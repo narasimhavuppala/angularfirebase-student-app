@@ -11,7 +11,7 @@ import { Student } from './../shared/student';
 
 export class StudentsListComponent implements OnInit {
   Student: Student[];
-  hideDataInitial: boolean = false; // Initial data table list state
+  hideWhenNoStudent: boolean = false; // Initial data table list state
   noData: boolean = false;   // No Data state
   preLoader: boolean = true; // Preloader state
   
@@ -38,10 +38,10 @@ export class StudentsListComponent implements OnInit {
     this.crudApi.GetStudentsList().valueChanges().subscribe(data => { // valueChanges() method gets simple list of data. Updates data as the changes occur in real-time.
       this.preLoader = false;
       if(data.length <= 0){
-        this.hideDataInitial = false;
+        this.hideWhenNoStudent = false;
         this.noData = true;
       } else {
-        this.hideDataInitial = true;
+        this.hideWhenNoStudent = true;
         this.noData = false;
       }
     })

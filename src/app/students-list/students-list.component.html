@@ -1,5 +1,9 @@
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
   <h1 class="h2">Students List</h1>
+  <a routerLink="/register-student" class="btn btn-success" *ngIf="hideWhenNoStudent">
+    <i class="fas fa-plus custom-fa-plus"></i>
+    Add Student
+  </a>
 </div>
 
 <div class="pricing-header mx-auto">
@@ -13,11 +17,14 @@
   <div class="no-data text-center" *ngIf="noData">
     <img src="assets/no-student.svg" class="nodata-msg" alt="No student">
     <p class="nodata-msg">No data added yet!</p>
-    <a routerLink="/register-student" class="btn btn-success">Add Student</a>
+    <a routerLink="/register-student" class="btn btn-success">
+      <i class="fas fa-plus custom-fa-plus"></i>
+      Add Student
+    </a>
   </div>
 
   <!-- Students list table -->
-  <div class="table-responsive" *ngIf="hideDataInitial">
+  <div class="table-responsive" *ngIf="hideWhenNoStudent">
     <table class="table table-bordered table-responsive-sm table-responsive-md table-responsive-lg">
       <thead>
         <tr>
