@@ -10,7 +10,8 @@ import { Student } from './../shared/student';
 })
 
 export class StudentsListComponent implements OnInit {
-  Student: Student[];
+  p: any // Fix for AOT compilation error for NGX pagination
+  Student: Student[];  // Save students data list in Student's array.
   hideWhenNoStudent: boolean = false; // Initial data table list state
   noData: boolean = false;   // No Data state
   preLoader: boolean = true; // Preloader state

@@ -11,8 +11,7 @@ import { ToastrService } from 'ngx-toastr'; // CRUD services API
 })
 
 export class AddStudentComponent implements OnInit {
-  public trackByS(p) { return p.s; } // Fix for AOT compilation error for NGX pagination
-  public studentForm: FormGroup;  // Define FormGroup to student's main form
+  public studentForm: FormGroup;  // Define FormGroup to student's form
  
   constructor(
     public crudApi: CrudService,  // CRUD API services

@@ -36,7 +36,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let student of Student| paginate: { itemsPerPage: 7, currentPage: p }; let i = index; ">
+        <tr *ngFor="let student of Student| paginate: { itemsPerPage: 7, currentPage: p }; let i = index;">
           <th scope="row">{{student.$key}}</th>
           <td>{{student.firstName}} {{student.lastName}}</td>
           <td>{{student.email}}</td>
