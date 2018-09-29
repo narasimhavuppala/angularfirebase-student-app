@@ -16,7 +16,7 @@ export class StudentsListComponent implements OnInit {
   preLoader: boolean = true; // Preloader state
   
 
-  constructor(private crudApi: CrudService){ }
+  constructor(public crudApi: CrudService){ }
 
 
   // Initialize student's list, when component is ready

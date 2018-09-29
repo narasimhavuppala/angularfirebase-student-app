@@ -185,7 +185,6 @@ body pagination-template {
 
 body .ngx-pagination li:last-child {
   margin: 0;
-  padding: 0 0px 0 8px;
 }
 
 body .ngx-pagination .current {
