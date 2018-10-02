@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Student } from '../shared/student';
-import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
+import { Student } from '../shared/student';  // Student data type interface class
+import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';  // Firebase modules for Database, Data list and Single object
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class CrudService {
-  studentsRef: AngularFireList<any>;
-  studentRef: AngularFireObject<any>;
+  studentsRef: AngularFireList<any>;    // Reference to Student data list, its an Observable
+  studentRef: AngularFireObject<any>;   // Reference to Student object, its an Observable too
   
+  // Inject AngularFireDatabase Dependency in Constructor
   constructor(private db: AngularFireDatabase) { }
 
   // Create Student
@@ -22,19 +23,19 @@ export class CrudService {
     })
   }
 
-  // Read Student
+  // Fetch Single Student Object
   GetStudent(id: string) {
     this.studentRef = this.db.object('students-list/' + id);
     return this.studentRef;
   }
 
-  // Read Students List
+  // Fetch Students List
   GetStudentsList() {
     this.studentsRef = this.db.list('students-list');
     return this.studentsRef;
   }  
 
-  // Update Student
+  // Update Student Object
   UpdateStudent(student: Student) {
     this.studentRef.update({
       firstName: student.firstName,
@@ -44,7 +45,7 @@ export class CrudService {
     })
   }  
 
-  // Delete Student
+  // Delete Student Object
   DeleteStudent(id: string) { 
     this.studentRef = this.db.object('students-list/'+id);
     this.studentRef.remove();

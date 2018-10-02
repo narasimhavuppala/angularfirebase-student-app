@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CrudService } from '../shared/crud.service';    // CRUD services API
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'; // Reactive form services
-import { ToastrService } from 'ngx-toastr'; // CRUD services API
+import { ToastrService } from 'ngx-toastr'; // Alert message using NGX toastr
 
 
 @Component({
@@ -50,12 +50,7 @@ export class AddStudentComponent implements OnInit {
 
   get mobileNumber() {
     return this.studentForm.get('mobileNumber');
-  }  
-
-  // Showing sucess message, when student data is submitted using Toastr
-  showSuccess() {
-    this.toastr.success('Student added successfully!');
-  }  
+  }
 
   // Reset student form's values
   ResetForm() {
@@ -64,7 +59,7 @@ export class AddStudentComponent implements OnInit {
  
   submitStudentData() {
     this.crudApi.AddStudent(this.studentForm.value); // Submit student data using CRUD API
-    this.showSuccess(); // Show success message when data is successfully submited
+    this.toastr.success(this.studentForm.controls['firstName'].value + ' successfully added!'); // Show success message when data is successfully submited
     this.ResetForm();  // Reset form when clicked on reset button
    };
 

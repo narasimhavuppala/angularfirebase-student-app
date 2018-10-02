@@ -10,13 +10,13 @@
 
   <!-- Preloader -->
   <div class="no-data text-center" *ngIf="preLoader">
-    <img src="assets/preloader.svg" class="nodata-msg" alt="No student">
+    <img src="assets/preloader.gif" class="preloader-icon" alt="No student">
   </div>
 
   <!-- No data -->
   <div class="no-data text-center" *ngIf="noData">
     <img src="assets/no-student.svg" class="nodata-msg" alt="No student">
-    <p class="nodata-msg">No data added yet!</p>
+    <p class="nodata-msg">No student added yet!</p>
     <a routerLink="/register-student" class="btn btn-success">
       <i class="fas fa-plus custom-fa-plus"></i>
       Add Student

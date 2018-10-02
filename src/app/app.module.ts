@@ -42,7 +42,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,           // Main routing module
     BrowserAnimationsModule,    // Required animations module for Toastr
     ToastrModule.forRoot({
-      timeOut: 10000,
+      timeOut: 3000,
       positionClass: 'toast-bottom-right',
       preventDuplicates: true,      
     }),
