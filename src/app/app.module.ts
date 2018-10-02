@@ -21,7 +21,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 
-// Pagination
+// NGX Pagination
 import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppComponent } from './app.component';

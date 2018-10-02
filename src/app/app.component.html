@@ -20,12 +20,16 @@
     <nav class="col-md-2 d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
         <ul class="nav flex-column">
+
+          <!-- routerLink="/register-student" to navigate to view-students component -->
           <li class="nav-item">
             <a class="nav-link" routerLink="/register-student" routerLinkActive="active">
               <i class="fas fa-plus"></i>Add Student
             </a>
           </li>
 
+          <!-- routerLink="/view-students" to navigate to view-students component -->
+          <!-- routerLinkActive="active" activates active class for component-->
           <li class="nav-item">
             <a class="nav-link" routerLink="/view-students" routerLinkActive="active">
               <i class="fas fa-list-ul"></i>Students List
@@ -38,7 +42,10 @@
     <!-- Main content -->
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
       <div class="inner-adjust">
+
+        <!-- Use router template to show the components for which router service is activated -->
         <router-outlet></router-outlet>
+
       </div>
     </main>
 
