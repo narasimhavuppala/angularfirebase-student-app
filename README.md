@@ -24,4 +24,4 @@ Written Article: [https://bit.ly/2IxXg8Z](https://bit.ly/2IxXg8Z)
 - RxJS 0.8.26
 - Typescript 2.7.2
 
-[Visit positronX.io to learn more about full stack software development tutorials](https://www.positronx.io/)
+[Visit positronX.io to learn more about full stack software development](https://www.positronx.io/)
