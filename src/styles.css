@@ -70,7 +70,6 @@ label{font-weight:500;}
 .custom-fa-plus{margin:0;width:auto;}
 .user-image{width:42px;height:42px;display:inline-block;border-radius:50%;vertical-align:middle;margin-right:7px;background-size:cover;background-repeat:no-repeat;background-position:0 0;}
 body .table thead th{background:#f3f5ff;}
-.preloader-icon { width: 100px;}
 
 
 /* Responsive */
@@ -83,5 +82,10 @@ body .table thead th{background:#f3f5ff;}
  .brand-logo{max-width:175px;margin:0 auto;display:block;}
  .dasboard-text{display:none !important;}
  ul.navbar-nav.px-3{margin:0 auto;}
- .navbar-dark .navbar-brand{margin-left:0;}
+ .navbar-dark .navbar-brand{margin-left:0; width: auto;}
+ .sidebar-sticky .nav li {width: 50%;text-align: center;border-right: 1px solid #c7ceff;}
+ .sidebar-sticky .nav li:last-child {border: none;}
+ .no-data img {max-width: 100%; margin-top: 0;}
+ .nodata-msg, .h2, h2 {font-size: 1.4rem;}
+ .custom-text {font-size: 14px;}
 }
