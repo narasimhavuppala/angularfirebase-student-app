@@ -70,7 +70,10 @@ label{font-weight:500;}
 .custom-fa-plus{margin:0;width:auto;}
 .user-image{width:42px;height:42px;display:inline-block;border-radius:50%;vertical-align:middle;margin-right:7px;background-size:cover;background-repeat:no-repeat;background-position:0 0;}
 body .table thead th{background:#f3f5ff;}
+.pricing-header { padding-bottom: 50px;}
 
+/* Footer */
+footer {width: 100%;text-align: center;padding-bottom: 25px;border-top: 1px solid #dee2e6 !important;padding-top: 25px; margin-top: 50px;}
 
 /* Responsive */
 @media(max-width:767px){.sidebar{position:static;padding:40px 0 10px;height:auto;}
@@ -81,11 +84,13 @@ body .table thead th{background:#f3f5ff;}
  .pt-3, .py-3{padding-top:1.5rem !important;}
  .brand-logo{max-width:175px;margin:0 auto;display:block;}
  .dasboard-text{display:none !important;}
- ul.navbar-nav.px-3{margin:0 auto;}
- .navbar-dark .navbar-brand{margin-left:0; width: auto;}
  .sidebar-sticky .nav li {width: 50%;text-align: center;border-right: 1px solid #c7ceff;}
  .sidebar-sticky .nav li:last-child {border: none;}
  .no-data img {max-width: 100%; margin-top: 0;}
  .nodata-msg, .h2, h2 {font-size: 1.4rem;}
  .custom-text {font-size: 14px;}
+ .navbar-nav {float: right;width: 50%;text-align: right;display: inherit;margin: 0;}
+ .navbar-dark .navbar-brand {margin: 0;width: 50%;float: left;display: inherit;}
+ .sidebar {padding: 40px 0 15px;}
+ footer br { display: none; }
 }

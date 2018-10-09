@@ -1,6 +1,6 @@
 <!-- Top navigation -->
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="https://www.positronx.io/" target="_blank" title="Learn Free Full Stack Development">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" routerLink="/register-student">
     <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="positronX.io Logo">
     <span class="dasboard-text">Dashboard</span>
   </a>
@@ -46,6 +46,17 @@
         <!-- Use router template to show the components for which router service is activated -->
         <router-outlet></router-outlet>
 
+        <!-- Footer -->
+        <footer>
+          This demo app is created by
+          <a href="https://www.positronx.io/" title="Learn Free Full Stack Software Development">
+            positronX.io
+          </a>
+          a place where<br> you can
+          <a href="https://www.positronx.io/learn-free-full-stack-software-development/" title="Learn Free Full Stack Software Development">
+            Learn Free Full Stack Software Development
+          </a>
+        </footer>
       </div>
     </main>
 
